@@ -3,7 +3,7 @@
 
 void inserirRank(int contadorEmpate, int contadorVitoriaJ1, int contadorVitoriaJ2, char jogador1[100], char jogador2[100], int qtdPartidas){
 	FILE *arq;
-	arq = fopen("rank.txt", "a");
+	arq = fopen("ranking.txt", "a");
 	
 	if(arq == NULL){
 		printf("Erro na abertura do arquivo!");
@@ -116,12 +116,12 @@ void jogar(){
 	s_partida.contadorEmpate = 0;
 	s_partida.qtdPartidas  = 0;	
 	
-	printf("Digite o nome do primeiro jogador: ");
+	printf("\nDigite o nome do primeiro jogador: ");
 	fgets(s_partida.jogador1, 100, stdin);
 	//retirando a quebra de linha da string
 	s_partida.jogador1[strlen(s_partida.jogador1)-1] = '\0';
 	
-	printf("Digite o nome do segundo jogador: ");
+	printf("\nDigite o nome do segundo jogador: ");
 	fgets(s_partida.jogador2, 100, stdin);
 	s_partida.jogador2[strlen(s_partida.jogador2)-1] = '\0';
 	do{
@@ -133,10 +133,10 @@ void jogar(){
 			tabuleiro(casas);
 			//jog_vez comeca 0 e vai alternando para entrar na vez do jogador X ou O
 			if(jog_vez %2 == 0){
-				printf("\nJogador X, %s", s_partida.jogador1);
+				printf("\nJogador X, %s\n", s_partida.jogador1);
 			}
 			else{
-				printf("\nJogador O, %s", s_partida.jogador2);	
+				printf("\nJogador O, %s\n", s_partida.jogador2);	
 			}
 			//pega linha e coluna da matriz para inserir o X ou O
 			printf("\nDigite para a linha: ");
@@ -181,9 +181,10 @@ void jogar(){
 		
 		s_partida.qtdPartidas = s_partida.qtdPartidas + 1;
 		
-		printf("\n\nDeseja jogar novamente ?(S-N)");
+		printf("\n\nDigite (S), para continuar... ");
+		printf("\nPara sair pressione qualquer outra tecla...");
 		scanf("%s", &resposta);
-	}while(resposta == 'S');
+	}while(resposta == 'S' || resposta == 's');
 	inserirRank(s_partida.contadorEmpate, s_partida.contadorVitoriaJ1, s_partida.contadorVitoriaJ2, s_partida.jogador1, s_partida.jogador2, s_partida.qtdPartidas);
 	system("cls");
 }

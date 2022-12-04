@@ -1,5 +1,5 @@
 
-                                =======RANKING=======
+=======RANKING=======
 
 Partidas jogadas: 1
 Empate: 0
@@ -8,7 +8,7 @@ Wellington: 0
 =====================
 
 Partidas jogadas: 1
-Empate: 0
-chefe: 1
-potencia: 0
+Empate: 1
+Daniel: 0
+Elder: 0
 =====================

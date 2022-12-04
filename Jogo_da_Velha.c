@@ -51,7 +51,7 @@ int main(){
 				system("pause");
 				break;
 			case 3:
-				lerArquivo("rank.txt");
+				lerArquivo("ranking.txt");
 				printf("\n");
 				system("pause");
 				break;
@@ -65,7 +65,8 @@ int main(){
 				system("pause");
 				break;
 			default:
-				printf("Opcao inexistente");
+				printf("\nOpcao inexistente!!\n");
+				
 				system("pause");
 		}
 	}
