@@ -1,0 +1,22 @@
+                                 Jogo da velha
+
+Essa versao do jogo soh tem opcao de 2 pessoas jogando uma contra a outra.
+O jogo eh uma matriz de 3x3 onde o jogador deve digitar de 1 a 3 para escolher a linha,
+e 1 a 3 para escolher a coluna e dar a posicao desejada.
+
+Exemplo: Jogador X digita 1 para linha e 1 para coluna:
+
+ X |   |
+------------
+   |   |
+------------
+   |   |
+
+O jogador que conseguir colocar 3 caracteres consecutivos formando uma reta ganha o jogo.
+Exemplo:
+
+ X | O |
+------------
+ O | X |
+------------
+   |   | X

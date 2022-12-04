@@ -1,0 +1,14 @@
+
+                                =======RANKING=======
+
+Partidas jogadas: 1
+Empate: 0
+Elder: 1
+Wellington: 0
+=====================
+
+Partidas jogadas: 1
+Empate: 0
+chefe: 1
+potencia: 0
+=====================
