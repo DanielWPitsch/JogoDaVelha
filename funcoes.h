@@ -104,6 +104,7 @@ struct partida{
 	int contadorEmpate;
 	int qtdPartidas;
 };
+
 void jogar(){
 	
 	char casas[3][3]; char resposta;
